@@ -1,0 +1,45 @@
+{
+  "name": "amosspark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --runInBand --detectOpenHandles --watchAll",
+    "use": "eslint . && npm link && cd ../usage && npm link amosspark && node script.js",
+    "pub": "npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmosSpark/starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmosSpark/starter/issues"
+  },
+  "homepage": "https://github.com/AmosSpark/starter#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^8.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/tests/example.test.js"
+    ],
+    "testTimeout": 100000,
+    "forceExit": true
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1"
+  }
+}
