@@ -33,4 +33,4 @@ jobs:
       - name: run unit tests
         env:
           KEY: ${{ secrets.KEY }}
-        run: npm test -- --runInBand --detectOpenHandles
+        run: npm run test-workflow

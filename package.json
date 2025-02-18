@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "jest --runInBand --detectOpenHandles --watchAll",
+    "test-workflow": "jest --runInBand --detectOpenHandles",
     "use": "eslint . && npm link && cd ../usage && npm link amosspark && node script.js",
     "pub": "npm publish --access=public"
   },
