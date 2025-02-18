@@ -33,4 +33,4 @@ jobs:
       - name: run unit tests
         env:
           KEY: ${{ secrets.KEY }}
-        run: npm run test
+        run: jest --runInBand --detectOpenHandles
